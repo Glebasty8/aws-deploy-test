@@ -1,8 +1,8 @@
 const express = require('express');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 
-const router = require('./router');
-const middlewares = require('./config/middlewares');
+//const router = require('./router');
+//const middlewares = require('./config/middlewares');
 
 const app = express();
 
