@@ -5,7 +5,7 @@ module.exports = {
     env: {
       NODE_ENV: "development",
       DB_HOST: "mongodb://Glebasty1:Borzilololoh123@ds247141.mlab.com:47141/node-tut",
-      PORT: "3002",
+      PORT: "80",
     },
     env_production : {
       NODE_ENV: 'production'

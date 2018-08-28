@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73b27403-9e8c-41ac-95d3-5b034a0d1319" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logs/out_log.json" afterPath="$PROJECT_DIR$/logs/out_log.json" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
+      <change beforePath="$PROJECT_DIR$/env/ecosystem.config.js" afterPath="$PROJECT_DIR$/env/ecosystem.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ecosystem.config.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ecosystem.config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/env/ecosystem.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="84" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="84" />
+            <state relative-caret-position="285">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -69,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -127,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/controllers/api.js" />
         <option value="$PROJECT_DIR$/src/controllers/auth.js" />
         <option value="$PROJECT_DIR$/src/config/db.js" />
-        <option value="$PROJECT_DIR$/env/ecosystem.config.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/env/ecosystem.config.js" />
       </list>
     </option>
   </component>
@@ -245,12 +243,20 @@
       <option name="presentableId" value="Default" />
       <updated>1532600110416</updated>
       <workItem from="1532600112138" duration="5969000" />
-      <workItem from="1535446170714" duration="1138000" />
+      <workItem from="1535446170714" duration="1288000" />
     </task>
+    <task id="LOCAL-00001" summary="Update app routing and display hello world page for aws instance">
+      <created>1535447360390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535447360390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7107000" />
+    <option name="totallyTimeSpent" value="7257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -282,6 +288,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update app routing and display hello world page for aws instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update app routing and display hello world page for aws instance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -370,14 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/ecosystem.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="84" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/middlewares.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -390,6 +392,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/ecosystem.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding />
         </state>
       </provider>
