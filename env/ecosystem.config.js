@@ -4,8 +4,11 @@ module.exports = {
     script: './src/app.js',
     env: {
       NODE_ENV: "development",
-      DB_HOST: "mongodb://Glebasty1:Borzilololoh123@ds247141.mlab.com:47141/node-tut",
-      PORT: "80",
+      DB_HOST: "mongodb://Glebasty:Borzilololoh123@ds247141.mlab.com:47141/node-tut",
+      PORT: "3002",
+      ACCESS_KEY_ID: 'AKIAJ5L7BPHAAJGJIMKA',
+      SECRET_ACCESS_KEY: '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',
+      BUCKET: 'node-tut-files-gleb-sabakarov',
     },
     env_production : {
       NODE_ENV: 'production'
