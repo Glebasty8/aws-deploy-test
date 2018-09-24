@@ -6,9 +6,11 @@ module.exports = {
       NODE_ENV: "development",
       DB_HOST: "mongodb://Glebasty:Borzilololoh123@ds247141.mlab.com:47141/node-tut",
       PORT: "3002",
-      ACCESS_KEY_ID: 'AKIAJ5L7BPHAAJGJIMKA',
-      SECRET_ACCESS_KEY: '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',
-      BUCKET: 'node-tut-files-gleb-sabakarov',
+      AWS_ACCESS_KEY_ID: 'AKIAISDKV5IEZ7LMI5CA',
+      AWS_SECRET_ACCESS_KEY: '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',
+      AWS_S3_BUCKET: 'node-tut-files-gleb-sabakarov',
+      NODE_MAILER_USER: 'gleb.sabakarov1997@gmai.com',
+      NODE_MAILER_PASSWORD: 'Borzilololoh666',
     },
     env_production : {
       NODE_ENV: 'production'

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-const facultySchema = Schema({
+const FacultySchema = new Schema({
     title: { type: String, required: true },
     university: { type: mongoose.Schema.Types.ObjectId, ref: 'University', required: true },
     telephone: { type: String },
@@ -11,7 +11,7 @@ const facultySchema = Schema({
     updated_at : { type: Date }
 });
 
-facultySchema.pre('save', function(next){
+FacultySchema.pre('save', function(next){
     const now = new Date();
     this.updated_at = now;
     if (!this.created_at) {
@@ -20,6 +20,6 @@ facultySchema.pre('save', function(next){
     next();
 });
 
-const Comment = mongoose.model('Faculty', facultySchema);
+const Comment = mongoose.model('Faculty', FacultySchema);
 
 module.exports = Comment;

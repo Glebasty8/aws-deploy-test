@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-const lectureSchema = Schema({
+const LectureSchema = new Schema({
     firstName: { type: String, unique: true, required: true },
     lastName: { type: String, unique: true, required: true },
     email: { type: String, unique: true, required: true },
@@ -15,7 +15,7 @@ const lectureSchema = Schema({
     salary: { type: Number, default: null },
 });
 
-lectureSchema.pre('save', function(next){
+LectureSchema.pre('save', function(next){
     const now = new Date();
     this.updated_at = now;
     if (!this.created_at) {
@@ -24,7 +24,7 @@ lectureSchema.pre('save', function(next){
     next();
 });
 
-const Student = mongoose.model('Student', lectureSchema);
+const Student = mongoose.model('Student', LectureSchema);
 
 module.exports = Student;
 

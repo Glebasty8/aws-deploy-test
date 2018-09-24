@@ -6,7 +6,8 @@
   "scripts": {
     "start": "pm2 start ./env/ecosystem.config.js --env=development && npm run flush",
     "flush": "pm2 flush",
-    "delete": "pm2 delete all"
+    "delete": "pm2 delete all",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -15,13 +16,37 @@
     "aws-sdk": "^2.304.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "cron": "^1.4.1",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "email-templates": "^5.0.0",
     "express": "^4.16.3",
     "express-fileupload": "^0.4.0",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
     "express-validator": "^5.3.0",
     "helmet": "^3.13.0",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.5",
     "morgan": "^1.9.0",
-    "path": "^0.12.7"
+    "nodemailer": "^4.6.8",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "socket.io": "^2.1.1",
+    "styled-components": "^3.4.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0"
   }
 }

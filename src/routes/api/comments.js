@@ -1,10 +1,11 @@
-const express = require ('express');
+const express = require('express');
+const mongoose = require('mongoose');
 
 const router = express.Router();
-const Comment = require('../models/сomment');
+const Comments = mongoose.model('Comments');
 
 router.get('/comments', (req, res) => {
-        Comment.find({}, ((err, comments) =>  {
+    Comments.find({}, ((err, comments) =>  {
             console.log('res', res);
             if(err) {
                 res.status(400).json({
@@ -20,7 +21,7 @@ router.get('/comments', (req, res) => {
     });
 
 router.post('/comments', (req, res) => {
-        const comment = new Comment();
+        const comment = new Comments();
         const { author, body} = req.body;
         comment.author = author;
         comment.body = body;

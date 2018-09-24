@@ -1,0 +1,9 @@
+{
+  "presets": ["env", "react", "latest"],
+  "plugins": [
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }]
+  ]
+}

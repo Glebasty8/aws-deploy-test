@@ -1,11 +1,12 @@
-const express = require ('express');
+const express = require('express');
+const mongoose = require('mongoose');
 const { check, validationResult } = require('express-validator/check');
 
 const router = express.Router();
-const University = require('../models/university');
+const Universities = mongoose.model('Universities');
 
 router.get('/', (req, res) => {
-    University.find({}, ((err, universities) =>  {
+    Universities.find({}, ((err, universities) =>  {
         console.log('res', res);
         if(err) {
             res.status(400).json({
